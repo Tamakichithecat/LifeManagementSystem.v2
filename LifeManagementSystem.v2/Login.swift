@@ -34,7 +34,6 @@ extension String {
     
 }
 class Login{
-    //admin -> username:hayato, password: 0419PPrgxx
    
     
    
