@@ -10,12 +10,16 @@
 		879F599124D4310500DCB42A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879F599024D4310500DCB42A /* AppDelegate.swift */; };
 		879F599324D4310500DCB42A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879F599224D4310500DCB42A /* SceneDelegate.swift */; };
 		879F599624D4310500DCB42A /* LifeManagementSystem_v2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 879F599424D4310500DCB42A /* LifeManagementSystem_v2.xcdatamodeld */; };
-		879F599824D4310500DCB42A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879F599724D4310500DCB42A /* ContentView.swift */; };
+		879F599824D4310500DCB42A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879F599724D4310500DCB42A /* LoginView.swift */; };
 		879F599A24D4310800DCB42A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 879F599924D4310800DCB42A /* Assets.xcassets */; };
 		879F599D24D4310800DCB42A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 879F599C24D4310800DCB42A /* Preview Assets.xcassets */; };
 		879F59A024D4310800DCB42A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 879F599E24D4310800DCB42A /* LaunchScreen.storyboard */; };
 		879F59AB24D4310900DCB42A /* LifeManagementSystem_v2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879F59AA24D4310900DCB42A /* LifeManagementSystem_v2Tests.swift */; };
 		879F59B624D4310900DCB42A /* LifeManagementSystem_v2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879F59B524D4310900DCB42A /* LifeManagementSystem_v2UITests.swift */; };
+		879F59C724D4320500DCB42A /* Swift2C.m in Sources */ = {isa = PBXBuildFile; fileRef = 879F59C624D4320500DCB42A /* Swift2C.m */; };
+		879F59CB24D4332000DCB42A /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879F59CA24D4332000DCB42A /* Login.swift */; };
+		879F59CF24D434B900DCB42A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879F59CE24D434B900DCB42A /* MainView.swift */; };
+		879F59D924E7B65A00DCB42A /* AllowsSelfSignedCertificateDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879F59D824E7B65A00DCB42A /* AllowsSelfSignedCertificateDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +44,7 @@
 		879F599024D4310500DCB42A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		879F599224D4310500DCB42A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		879F599524D4310500DCB42A /* LifeManagementSystem_v2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LifeManagementSystem_v2.xcdatamodel; sourceTree = "<group>"; };
-		879F599724D4310500DCB42A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		879F599724D4310500DCB42A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		879F599924D4310800DCB42A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		879F599C24D4310800DCB42A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		879F599F24D4310800DCB42A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +55,13 @@
 		879F59B124D4310900DCB42A /* LifeManagementSystem.v2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeManagementSystem.v2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		879F59B524D4310900DCB42A /* LifeManagementSystem_v2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeManagementSystem_v2UITests.swift; sourceTree = "<group>"; };
 		879F59B724D4310900DCB42A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		879F59C324D4320400DCB42A /* LifeManagementSystem.v2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LifeManagementSystem.v2-Bridging-Header.h"; sourceTree = "<group>"; };
+		879F59C424D4320400DCB42A /* LifeManagementSystem.v2Tests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LifeManagementSystem.v2Tests-Bridging-Header.h"; sourceTree = "<group>"; };
+		879F59C524D4320400DCB42A /* LifeManagementSystem.v2UITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LifeManagementSystem.v2UITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		879F59C624D4320500DCB42A /* Swift2C.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Swift2C.m; sourceTree = "<group>"; };
+		879F59CA24D4332000DCB42A /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		879F59CE24D434B900DCB42A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		879F59D824E7B65A00DCB42A /* AllowsSelfSignedCertificateDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowsSelfSignedCertificateDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +114,19 @@
 			children = (
 				879F599024D4310500DCB42A /* AppDelegate.swift */,
 				879F599224D4310500DCB42A /* SceneDelegate.swift */,
-				879F599724D4310500DCB42A /* ContentView.swift */,
+				879F599724D4310500DCB42A /* LoginView.swift */,
+				879F59CE24D434B900DCB42A /* MainView.swift */,
+				879F59CA24D4332000DCB42A /* Login.swift */,
+				879F59D824E7B65A00DCB42A /* AllowsSelfSignedCertificateDelegate.swift */,
 				879F599924D4310800DCB42A /* Assets.xcassets */,
 				879F599E24D4310800DCB42A /* LaunchScreen.storyboard */,
 				879F59A124D4310900DCB42A /* Info.plist */,
 				879F599424D4310500DCB42A /* LifeManagementSystem_v2.xcdatamodeld */,
 				879F599B24D4310800DCB42A /* Preview Content */,
+				879F59C624D4320500DCB42A /* Swift2C.m */,
+				879F59C324D4320400DCB42A /* LifeManagementSystem.v2-Bridging-Header.h */,
+				879F59C424D4320400DCB42A /* LifeManagementSystem.v2Tests-Bridging-Header.h */,
+				879F59C524D4320400DCB42A /* LifeManagementSystem.v2UITests-Bridging-Header.h */,
 			);
 			path = LifeManagementSystem.v2;
 			sourceTree = "<group>";
@@ -207,13 +225,16 @@
 				TargetAttributes = {
 					879F598C24D4310500DCB42A = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 					879F59A524D4310900DCB42A = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 						TestTargetID = 879F598C24D4310500DCB42A;
 					};
 					879F59B024D4310900DCB42A = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 						TestTargetID = 879F598C24D4310500DCB42A;
 					};
 				};
@@ -270,10 +291,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				879F59D924E7B65A00DCB42A /* AllowsSelfSignedCertificateDelegate.swift in Sources */,
 				879F599124D4310500DCB42A /* AppDelegate.swift in Sources */,
+				879F59CF24D434B900DCB42A /* MainView.swift in Sources */,
 				879F599324D4310500DCB42A /* SceneDelegate.swift in Sources */,
-				879F599824D4310500DCB42A /* ContentView.swift in Sources */,
+				879F599824D4310500DCB42A /* LoginView.swift in Sources */,
+				879F59CB24D4332000DCB42A /* Login.swift in Sources */,
 				879F599624D4310500DCB42A /* LifeManagementSystem_v2.xcdatamodeld in Sources */,
+				879F59C724D4320500DCB42A /* Swift2C.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,7 +463,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"LifeManagementSystem.v2/Preview Content\"";
 				DEVELOPMENT_TEAM = XJL8CGK544;
 				ENABLE_PREVIEWS = YES;
@@ -449,6 +476,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "okzk.LifeManagementSystem-v2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LifeManagementSystem.v2/LifeManagementSystem.v2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -458,7 +487,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"LifeManagementSystem.v2/Preview Content\"";
 				DEVELOPMENT_TEAM = XJL8CGK544;
 				ENABLE_PREVIEWS = YES;
@@ -469,6 +500,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "okzk.LifeManagementSystem-v2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LifeManagementSystem.v2/LifeManagementSystem.v2-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -479,6 +511,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XJL8CGK544;
 				INFOPLIST_FILE = LifeManagementSystem.v2Tests/Info.plist;
@@ -490,6 +523,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "okzk.LifeManagementSystem-v2Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LifeManagementSystem.v2/LifeManagementSystem.v2Tests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifeManagementSystem.v2.app/LifeManagementSystem.v2";
@@ -501,6 +536,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XJL8CGK544;
 				INFOPLIST_FILE = LifeManagementSystem.v2Tests/Info.plist;
@@ -512,6 +548,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "okzk.LifeManagementSystem-v2Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LifeManagementSystem.v2/LifeManagementSystem.v2Tests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifeManagementSystem.v2.app/LifeManagementSystem.v2";
@@ -522,6 +559,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XJL8CGK544;
 				INFOPLIST_FILE = LifeManagementSystem.v2UITests/Info.plist;
@@ -532,6 +570,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "okzk.LifeManagementSystem-v2UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LifeManagementSystem.v2/LifeManagementSystem.v2UITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = LifeManagementSystem.v2;
@@ -542,6 +582,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XJL8CGK544;
 				INFOPLIST_FILE = LifeManagementSystem.v2UITests/Info.plist;
@@ -552,6 +593,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "okzk.LifeManagementSystem-v2UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LifeManagementSystem.v2/LifeManagementSystem.v2UITests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = LifeManagementSystem.v2;
