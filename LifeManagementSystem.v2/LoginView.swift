@@ -14,6 +14,7 @@ import SwiftUI
         @State public var isValidUser = false
         @State public var hasError = true
         @State private var isPushed = false
+        @State public var accountRegister = false
 
             var body: some View {
                 NavigationView{
@@ -43,7 +44,7 @@ import SwiftUI
                             .foregroundColor(.red)
                     }
                     
-                    
+                    HStack{//ボタン並列用
                     VStack {
                     Button("OK") {
                         Login().login(userName: self.userName, password: self.password)
@@ -63,11 +64,25 @@ import SwiftUI
                                              }
                 }
                         }//end if
+                        
                     }
                     .foregroundColor(.white)
                     .frame(width: 70, height:30)
                     .background(Color.blue)
                     .cornerRadius(10)
+                    
+                    VStack {
+                        Button(action: {self.accountRegister.toggle()}){
+                            Text("アカウント作成")
+                        }.sheet(isPresented: $accountRegister){
+                            AccountRegisterView()
+                        }
+                        .foregroundColor(.white)
+                        .frame(width: 120, height:30)
+                        .background(Color.blue)
+                        .cornerRadius(10)
+                    }
+                    }//ボタン並列用
                     }
                     .background(Color.white)
                 }
