@@ -23,6 +23,7 @@
 		879F59CB24D4332000DCB42A /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879F59CA24D4332000DCB42A /* Login.swift */; };
 		879F59CF24D434B900DCB42A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879F59CE24D434B900DCB42A /* MainView.swift */; };
 		879F59D924E7B65A00DCB42A /* AllowsSelfSignedCertificateDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879F59D824E7B65A00DCB42A /* AllowsSelfSignedCertificateDelegate.swift */; };
+		87F8509825EA3E2800976427 /* CustomListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F8509725EA3E2700976427 /* CustomListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		879F59CA24D4332000DCB42A /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		879F59CE24D434B900DCB42A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		879F59D824E7B65A00DCB42A /* AllowsSelfSignedCertificateDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowsSelfSignedCertificateDelegate.swift; sourceTree = "<group>"; };
+		87F8509725EA3E2700976427 /* CustomListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				8770E0892560D9C100351C9A /* AccountRegisterView.swift */,
 				8770E0792560D3A000351C9A /* InputView.swift */,
 				879F59CA24D4332000DCB42A /* Login.swift */,
+				87F8509725EA3E2700976427 /* CustomListView.swift */,
 				879F59D824E7B65A00DCB42A /* AllowsSelfSignedCertificateDelegate.swift */,
 				879F599924D4310800DCB42A /* Assets.xcassets */,
 				879F599E24D4310800DCB42A /* LaunchScreen.storyboard */,
@@ -229,7 +232,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "岡崎隼斗";
 				TargetAttributes = {
 					879F598C24D4310500DCB42A = {
@@ -301,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8770E07A2560D3A000351C9A /* InputView.swift in Sources */,
+				87F8509825EA3E2800976427 /* CustomListView.swift in Sources */,
 				879F59D924E7B65A00DCB42A /* AllowsSelfSignedCertificateDelegate.swift in Sources */,
 				8770E08A2560D9C100351C9A /* AccountRegisterView.swift in Sources */,
 				8770E07F2560D4FE00351C9A /* MainPageView.swift in Sources */,
@@ -383,6 +387,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -443,6 +448,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
