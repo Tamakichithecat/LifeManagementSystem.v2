@@ -15,7 +15,7 @@ func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationCh
     // 認証チャレンジタイプがサーバ認証かどうか確認
     // 通信対象のホストは想定しているものかどうか確認
     guard protectionSpace.authenticationMethod == NSURLAuthenticationMethodServerTrust,
-        protectionSpace.host == "okzk",
+        protectionSpace.host == "localhost",
         let serverTrust = protectionSpace.serverTrust else {
             // 特別に検証する対象ではない場合はデフォルトのハンドリングを行う
             completionHandler(.performDefaultHandling, nil)

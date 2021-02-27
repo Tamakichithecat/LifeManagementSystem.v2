@@ -41,7 +41,7 @@ class Login{
         
     
         //var torf : Bool = false
-        var url = URLComponents(string: "https://okzk/ConnectDB.php")!
+        var url = URLComponents(string: "https://localhost:8443/okzk/IsAccountExist.php")!
         url.queryItems = [
             URLQueryItem(name: "accountUsername", value: userName),
             URLQueryItem(name: "accountPassword", value: password)
@@ -52,9 +52,6 @@ class Login{
         let task = session.dataTask(with: req, completionHandler: {(data, res ,err) in
              if data != nil {
                 //let phpres = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
-                
-                
-                
                 let decoder = JSONDecoder()
                 let phpres = try? decoder.decode(Dec.self, from: data!).res
                 if phpres == "login success"{

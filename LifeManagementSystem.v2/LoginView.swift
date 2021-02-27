@@ -36,7 +36,7 @@ import SwiftUI
                     .font(.body)
                     .padding()
                     .frame(alignment: .bottomLeading)
-                TextField("input here", text: $password)
+                SecureField("input here", text: $password)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
                     if(!self.hasError){
@@ -78,7 +78,7 @@ import SwiftUI
                             AccountRegisterView()
                         }
                         .foregroundColor(.white)
-                        .frame(width: 120, height:30)
+                        .frame(width: 150, height:30)
                         .background(Color.blue)
                         .cornerRadius(10)
                     }
