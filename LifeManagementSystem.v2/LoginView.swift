@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
     struct LoginView: View {
+        
         @State public var userName = ""
         @State public var password = ""
         @State public var isValidUser = false
@@ -16,6 +17,10 @@ import SwiftUI
         @State private var isPushed = false
         @State public var accountRegister = false
 
+        init(){
+            UITableView.appearance().backgroundColor = .clear
+        }
+        
             var body: some View {
                 NavigationView{
                 ZStack(alignment: .leading){
