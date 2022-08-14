@@ -10,90 +10,119 @@ import Foundation
 import SwiftUI
 
 struct AccountRegisterView: View{
+    @Environment(\.presentationMode) var presentationMode
+    @Environment(\.dismiss) var dismiss
+    
     @State public var registerUserName = ""
     @State public var registerPassword = ""
     @State public var registerPasswordAgain = ""
     @State public var accountRegisterConfirm = false
-    @Environment(\.presentationMode) var presentationMode
- 
+    @State public var isValidRegister = false
+    @State public var hasError = true
+    @State private var isPushed = false
+    
+    init(){
+        UITableView.appearance().backgroundColor = .clear
+    }
     
     var body: some View {
         NavigationView{
-         ZStack(alignment: .top){
-         Color(red: 172/255,green: 253/255,blue: 241/255, opacity: 1.0)
-             .edgesIgnoringSafeArea(.all)
-            VStack(alignment: .center){
-            Form{
-                Section(header: Text("User Nameの登録")){
-                    TextField("登録するUser Nameを入力してください", text: $registerUserName)
-                    
-                }
-                Section(header: Text("Passwordの登録")){
-                    TextField("登録するPasswordを入力してください", text: $registerPassword)
-                }
-                
-                Section(header: Text("Passwordの再登録")){
-                    if(self.registerPasswordAgain != self.registerPassword){
-                        Text("登録したいPasswordと一致していません")
-                            .foregroundColor(.red)
-                        
-                    }
-                    TextField("登録するPasswordを再度入力してください", text: $registerPasswordAgain)
-                }
-                
-            }
-            .background(Color.white)
-                //end From
-            Button(action: {self.accountRegisterConfirm.toggle()}){
-                Text("確定")
-            }
-        
-            .foregroundColor(.white)
-            .frame(width: 120, height:30)
-            .background(Color.blue)
-            .cornerRadius(10)
-            
-            }
-            .background(Color.white)
-            //end VStack
-            //確認画面
-            if(self.accountRegisterConfirm == true){
-        //    ZStack(alignment: .top){ !!!!
+            ZStack(alignment: .top){
                 Color(red: 172/255,green: 253/255,blue: 241/255, opacity: 1.0)
-                             .edgesIgnoringSafeArea(.all)
-                
-                VStack(alignment: .center){
-                    Text("以下の内容で登録してもよろしいでしょうか")
-                        .foregroundColor(Color.black)
+                    .edgesIgnoringSafeArea(.all)
+                if(self.accountRegisterConfirm == false){
+                VStack(alignment: .center,spacing: 0){
+                    Text("アカウント登録")
+                        .font(.largeTitle)
+                        .padding()
                     Form{
-                        Section(header: Text("User Name")){
-                            Text(self.registerUserName)
-                            }
-                        Section(header: Text("Password")){
-                            Text(self.registerPassword)
-                            }
-                                    
+                        Section(header: Text("User Nameの登録")){
+                            TextField("登録するUser Nameを入力してください", text: $registerUserName).foregroundColor(.black)
                         }
-                            .background(Color.white)
-                    // end Form
-                    Button(action:{self.presentationMode.wrappedValue.dismiss()}){
-                        Text("登録")//.onTapGesture {
-               //アカウント登録用関数を記載したいが遷移できなくなる可能性あり
-                                  // }
+                        
+                        Section(header: Text("Passwordの登録")){
+                            TextField("登録するPasswordを入力してください", text: $registerPassword).foregroundColor(.black)
+                        }
+                        
+                        Section(header: Text("Passwordの再登録")){
+                            TextField("登録するPasswordを再度入力してください", text: $registerPasswordAgain).foregroundColor(Color.black)
+                            if(self.registerPasswordAgain != self.registerPassword){
+                                Text("登録したいPasswordと一致していません")
+                                    .foregroundColor(.red)
+                            }
+                        }
                     }
+                    .frame(height:350)
+                    .foregroundColor(.black)
+                    //end From
+                    HStack{//ボタン並列用
+                        Button(action: {dismiss()}){
+                            Text("キャンセル")
+                        }
                         .foregroundColor(.white)
                         .frame(width: 120, height:30)
                         .background(Color.blue)
                         .cornerRadius(10)
+                        
+                        Button(action: {self.accountRegisterConfirm.toggle()}){
+                            Text("確定")
+                        }
+                        .foregroundColor(.white)
+                        .frame(width: 120, height:30)
+                        .background(Color.blue)
+                        .cornerRadius(10)
+                    }.background(Color(red: 172/255,green: 253/255,blue: 241/255, opacity: 1.0))//ボタン並列用
                 }
-                    .background(Color.white)
-                //end Vstack
+                .background(Color(red: 172/255,green: 253/255,blue: 241/255, opacity: 1.0))
+                //end VStack
             }//end if
-            
+                //確認画面
+                if(self.accountRegisterConfirm == true){
+                    //    ZStack(alignment: .top){ !!!!
+                    
+                    VStack(alignment: .center,spacing:0){
+                        Text("登録内容の確認")
+                            .font(.largeTitle)
+                            .padding()
+                        Text("以下の内容で登録してもよろしいでしょうか")
+                            .foregroundColor(Color.black)
+                        Form{
+                            Section(header: Text("User Name")){
+                                Text(self.registerUserName).foregroundColor(Color.black)
+                            }
+                            Section(header: Text("Password")){
+                                Text(self.registerPassword).foregroundColor(Color.black)
+                            }
+                        }
+                        .frame(height: 250)
+                        .foregroundColor(.black)
+                        .background(Color(red: 172/255,green: 253/255,blue: 241/255, opacity: 1.0))
+                        HStack{//ボタン並列用
+                            Button(action: {self.accountRegisterConfirm.toggle()}){
+                                Text("修正")
+                            }
+                            .foregroundColor(.white)
+                            .frame(width: 120, height:30)
+                            .background(Color.blue)
+                            .cornerRadius(10)
+                            
+                            Button("登録"){
+                                Register().register(userName: self.registerUserName, password: self.registerPassword)
+                                dismiss()
+                            }
+                            .foregroundColor(.white)
+                            .frame(width: 120, height:30)
+                            .background(Color.blue)
+                            .cornerRadius(10)
+                        }//ボタン並列用
+                    }
+                    //end Vstack
+                }//end if
+                
             }//end ZStack
-            
-        }//end navigation
         }
+        .background(Color.blue)//end navigation
+    }
 }
 
 struct AccountRegisterView_Previews: PreviewProvider {
